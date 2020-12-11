@@ -1,5 +1,11 @@
 # i3-configurations
 The various configuration files I use for my personal i3 wm setup on my Linux machine. 
+Core packages I use are 
+- `i3-wm` for core window manager behavior
+- `xorg-xrdb` for use of `.Xresources` in customization
+- `i3status` for status bar within i3
+- `urxvt` for terminal
+
 
 ## Making changes take effect
 After making any of the changes that follow in this document, certain steps must first be taken to apply the changes.
