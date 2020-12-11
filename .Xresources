@@ -1,0 +1,61 @@
+#include "/home/zkauff/.xcolors/default"
+
+! Fonts
+Xft.dpi: 96
+Xft.hinting: true
+Xft.rgba: rgb
+Xft.autohint: false
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
+
+*.foreground:  FOREGROUND
+*.background:  BACKGROUND
+*.cursorColor: FOREGROUND
+*.color0:      COLOR0
+*.color8:      COLOR8
+*.color1:      COLOR1
+*.color9:      COLOR9
+*.color2:      COLOR2
+*.color10:     COLOR10
+*.color3:      COLOR3
+*.color11:     COLOR11
+*.color4:      COLOR4
+*.color12:     COLOR12
+*.color5:      COLOR5
+*.color13:     COLOR13
+*.color6:      COLOR6
+*.color14:     COLOR14
+*.color7:      COLOR7
+*.color15:     COLOR15
+
+
+! URxvt
+URxvt.scrollBar: false
+URxvt.font: xft:Ubuntu Mono:size=8, xft:Ubuntu Mono:antialias=false
+URxvt.boldFont: xft:scientifica:size=8:style=Bold
+URxvt.italicFont: xft:scientifica:size=8:style=Italic
+URxvt.cursorUnderline: true
+URxvt.internalBorder: 5
+URxvt.letterSpace: -2
+URxvt.perl-ext-common: default,matcher,font-size
+URxvt.font-size.step: 1
+
+! rofi
+rofi.font: scientifica Regular 8
+rofi.terminal: urxvtc
+rofi.ssh-client: ssh
+rofi.ssh-command: {terminal} -e {ssh-client} {host}
+
+! Clickable URLs
+URxvt.url-launcher: firefox
+URxvt.matcher.button: 1
+
+! Use Control-Shift-V/C for X clipboard
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+
+! Resizeable text
+URxvt.keysym.C-Up:     font-size:increase
+URxvt.keysym.C-Down:   font-size:decrease
