@@ -1,4 +1,4 @@
-#include "/home/zkauff/.xcolors/default"
+#include "/home/zkauff/.xcolors/synth"
 
 ! Fonts
 Xft.dpi: 96
@@ -28,34 +28,35 @@ Xft.lcdfilter: lcddefault
 *.color7:      COLOR7
 *.color15:     COLOR15
 
+rofi.font:	scientifica Regular 8
+rofi.terminal:	urxvtc
+rofi.ssh-client:	ssh
+rofi.ssh-command:	{terminal} -e {ssh-client} {host}
 
-! URxvt
-URxvt.scrollBar: false
-URxvt.font: xft:Ubuntu Mono:size=8, xft:Ubuntu Mono:antialias=false
-URxvt.boldFont: xft:scientifica:size=8:style=Bold
-URxvt.italicFont: xft:scientifica:size=8:style=Italic
-URxvt.cursorUnderline: true
-URxvt.internalBorder: 5
-URxvt.letterSpace: -2
-URxvt.perl-ext-common: default,matcher,font-size
-URxvt.font-size.step: 1
+URxvt.url-launcher:	firefox
+URxvt.matcher.button:	1
+URxvt.perl-ext-common:	default, tabbed, font
+URxvt.tabbed.tabbar-fg:	11
+URxvt.tabbed.tabbar-bg:	15
+URxvt.tabbed.tab-fg:	11
+URxvt.tabbed.tab-bg:	15
+URxvt*font:	xft:hax:style=Regular:size=11:hinting=full:antialias=true
+URxvt*boldFont:	
+URxvt*italicFont:	
+URxvt*bolditalicFont:	
+URxvt*letterSpace:	-2
+URxvt*lineSpace:	-2
+URxvt*scrollBar:	false
+URxvt*transparent:	false
+URxvt*internalBorder:	2
+URxvt*borderColor:	#46b5d1
+URXvt*externalBorder:	2
+URxvt*borderLess:	false
+URxvt.saveLines:	9999
+URxvt.iso14755:	false
+twobwm.enable_compton:	true
 
-! rofi
-rofi.font: scientifica Regular 8
-rofi.terminal: urxvtc
-rofi.ssh-client: ssh
-rofi.ssh-command: {terminal} -e {ssh-client} {host}
-
-! Clickable URLs
-URxvt.url-launcher: firefox
-URxvt.matcher.button: 1
-
-! Use Control-Shift-V/C for X clipboard
-URxvt.iso14755: false
 URxvt.iso14755_52: false
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
 URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
 
-! Resizeable text
-URxvt.keysym.C-Up:     font-size:increase
-URxvt.keysym.C-Down:   font-size:decrease
