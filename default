@@ -1,0 +1,26 @@
+#define FOREGROUND #6dced1
+#define BACKGROUND #100c1f
+//light purple
+#define COLOR0  #502651
+#define COLOR8  #502651
+//light teal
+#define COLOR1  #2a9d8f
+#define COLOR9  #2a9d8f
+//maroon
+#define COLOR2  #8b6dd1
+#define COLOR10 #8b6dd1
+//white
+#define COLOR3  #ffffff
+#define COLOR11 #ffffff
+//light pinkish
+#define COLOR4  #cd6987
+#define COLOR12 #cd6987
+//soft indigo
+#define COLOR5  #818ee1
+#define COLOR13 #818ee1
+//offwhite
+#define COLOR6  #f1ecf9
+#define COLOR14 #f1ecf9
+//light blue 
+#define COLOR7  #6dced1
+#define COLOR15 #6dced1
