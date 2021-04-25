@@ -4,6 +4,11 @@
 
 alias ll='ls -al'
 alias vi='vim'
+alias discord='~/Discord/Discord'
+alias cisco='/opt/cisco/anyconnect/bin/vpnui'
+alias matlab='~/matlab/bin/matlab'
+alias openrgb='~/Development/OpenRGB/openrgb'
+alias ccstudio='~/ti/ccs1020/ccs/eclipse/ccstudio'
 
 [[ $- != *i* ]] && return
 
@@ -141,6 +146,7 @@ ex ()
   fi
 }
 
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/zkauff/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
@@ -150,9 +156,14 @@ else
     if [ -f "/home/zkauff/anaconda3/etc/profile.d/conda.sh" ]; then
         . "/home/zkauff/anaconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/home/zkauff/anaconda3/bin:$PATH"
+        export PATH="$PATH:/home/zkauff/anaconda3/bin"
     fi
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+#Load NVM 
+source /usr/share/nvm/init-nvm.sh
+
+# Added by Amplify CLI binary installer
+export PATH="$HOME/.amplify/bin:$PATH"
 

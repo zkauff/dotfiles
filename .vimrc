@@ -1,4 +1,5 @@
 set tabstop=4
+set expandtab
 syntax on
-colo default
-set mouse=a 
+colo elflord
+set mouse=a

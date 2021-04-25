@@ -26,58 +26,45 @@ bindsym $mod+Shift+r restart
 I keep a directory of colorschemes at `~/.xcolors/`. The color scheme files are as follows:
 
 ```
-~/.xcolors/default
-#define FOREGROUND #6dced1
-#define BACKGROUND #100c1f
-//light purple
-#define COLOR0  #8b6dd1
-#define COLOR10 #8b6dd1
-//light teal
-#define COLOR1  #2a9d8f
-#define COLOR9  #2a9d8f
-//maroon
-#define COLOR2  #502651
-#define COLOR8  #502651
-//white
-#define COLOR3  #ffffff
-#define COLOR11 #ffffff
-//blue
-#define COLOR4  #2d52da
-#define COLOR12 #2d52da
-//soft indigo
-#define COLOR5  #818ee1
-#define COLOR13 #818ee1
-//offwhite
-#define COLOR6  #f1ecf9
-#define COLOR14 #f1ecf9
-//light blue 
-#define COLOR7  #6dced1
-#define COLOR15 #6dced1
+~/.xcolors/example
+! special
+*.foreground:   #c5c8c6
+*.background:   #1d1f21
+*.cursorColor:  #c5c8c6
 
+! black
+*.color0:       #282a2e
+*.color8:       #373b41
+
+! red
+*.color1:       #a54242
+*.color9:       #cc6666
+
+! green
+*.color2:       #8c9440
+*.color10:      #b5bd68
+
+! yellow
+*.color3:       #de935f
+*.color11:      #f0c674
+
+! blue
+*.color4:       #5f819d
+*.color12:      #81a2be
+
+! magenta
+*.color5:       #85678f
+*.color13:      #b294bb
+
+! cyan
+*.color6:       #5e8d87
+*.color14:      #8abeb7
+
+! white
+*.color7:       #707880
+*.color15:      #c5c8c6
 ```
 
 These colors get pulled by `~/.Xresources`. An easy way I manage color schemes is by simply changing the import statement.
 
-```
-#include "/home/zkauff/.xcolors/default"
-
-*.foreground:  FOREGROUND
-*.background:  BACKGROUND
-*.cursorColor: FOREGROUND
-*.color0:      COLOR0
-*.color8:      COLOR8
-*.color1:      COLOR1
-*.color9:      COLOR9
-*.color2:      COLOR2
-*.color10:     COLOR10
-*.color3:      COLOR3
-*.color11:     COLOR11
-*.color4:      COLOR4
-*.color12:     COLOR12
-*.color5:      COLOR5
-*.color13:     COLOR13
-*.color6:      COLOR6
-*.color14:     COLOR14
-*.color7:      COLOR7
-*.color15:     COLOR15
-```
+A great site to get these color schemes is https://terminal.sexy. You can generate color schemes and see how they look with some common programs you use. Then, go to the export tab and export format Xresources. You can download this and leave it in `~/.xcolors` and point to it in the `~/.Xresources` import statement.
