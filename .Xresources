@@ -1,4 +1,4 @@
-#include "/home/zkauff/.xcolors/pastel"
+#include "/home/zkauff/.xcolors/redblue"
 
 ! Fonts
 Xft.dpi: 96
@@ -8,10 +8,10 @@ Xft.autohint: false
 Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
 
-*.font: xft:Iosevka:style=Regular:size=8
-*.boldFont: xft:Iosevka:style=Bold:size=8
-*.italicFont: xft:Iosevka:style=Italic:size=8
-*.boldItalicFont: xft:Iosevka:style=Bold Italic:size=8
+*.font: xft:DroidSansArabic:style=Regular:size=12
+*.boldFont: xft:DroidSansArabic:style=Bold:size=12
+*.italicFont: xft:DroidSansArabic:style=Italic:size=12
+*.boldItalicFont: xft:DroidSansArabic:style=Bold Italic:size=12
 rofi.terminal:	urxvtc
 rofi.ssh-client:	ssh
 rofi.ssh-command:	{terminal} -e {ssh-client} {host}
@@ -19,12 +19,8 @@ rofi.ssh-command:	{terminal} -e {ssh-client} {host}
 
 URxvt.url-launcher:	firefox
 URxvt.matcher.button:	1
-URxvt.perl-ext-common:	default, tabbed, font
-URxvt.tabbed.tabbar-fg:	11
-URxvt.tabbed.tabbar-bg:	15
-URxvt.tabbed.tab-fg:	11
-URxvt.tabbed.tab-bg:	15
-URxvt*letterSpace:	-2
+URxvt.perl-ext-common:	default
+URxvt*letterSpace:	-4
 URxvt*lineSpace:	-3
 URxvt*scrollBar:	false
 URxvt*transparent:	false
