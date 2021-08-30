@@ -3,9 +3,9 @@ The various configuration files I use for my personal i3 wm setup on my Linux ma
 Core packages I use are 
 - `i3-wm` for core window manager behavior
 - `xorg-xrdb` for use of `.Xresources` in customization
-- `i3status` for status bar within i3
 - `urxvt` for terminal
-
+- `polybar` for status bar
+- https://github.com/jluttine/rofi-power-menu for rofi power menu
 
 ## Making changes take effect
 After making any of the changes that follow in this document, certain steps must first be taken to apply the changes.
