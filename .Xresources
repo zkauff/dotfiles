@@ -1,4 +1,4 @@
-#include "/home/zkauff/.xcolors/redblue"
+#include "/home/zkauff/.xcolors/cloud"
 
 ! Fonts
 Xft.dpi: 96
@@ -20,17 +20,19 @@ rofi.ssh-command:	{terminal} -e {ssh-client} {host}
 URxvt.url-launcher:	firefox
 URxvt.matcher.button:	1
 URxvt.perl-ext-common:	default
-URxvt*letterSpace:	-4
+URxvt*letterSpace: -3
 URxvt*lineSpace:	-3
 URxvt*scrollBar:	false
-URxvt*transparent:	false
-URxvt*internalBorder: 2
-URXvt*externalBorder:	5
+URxvt*internalBorder: 3 
+URXvt*externalBorder: 3 
 URxvt*borderLess:	false
 URxvt.cursorBlink: true
 URxvt.cursorUnderline: false
 URxvt.saveLines:	9999
 URxvt.iso14755:	false
+urxvt*depth: 32
+urxvt*background: rgba:0000/0000/0200/8000
+
 twobwm.enable_compton:	true
 
 URxvt.iso14755_52: false
